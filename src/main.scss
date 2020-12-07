@@ -1,0 +1,40 @@
+@import "./header/header.scss";
+@import "./main/business.scss";
+@import "./main/service.scss";
+@import "./main/workWIthMyComApp.scss";
+@import "./main/ouradvantages.scss";
+@import "./main/success.scss";
+@import "./footer/footer.scss";
+@import "~animate.css/source/animate.css";
+@import "~selectric/public/selectric.css";
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, serif;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+h1, h2, ul, p{
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

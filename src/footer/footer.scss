@@ -1,0 +1,133 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5270EC;
+  margin-top: 184px;
+  padding: 0 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-circle-left {
+  position: absolute;
+  left: -150px;
+  bottom: -30%;
+  width: 241px;
+  height: 241px;
+
+  @include for-medium-up {
+    width: 491px;
+    height: 491px;
+    bottom: -65%;
+    left: -250px;
+  }
+}
+
+.footer-circle-right {
+  position: absolute;
+  right: -150px;
+  top: -25%;
+  width: 256px;
+  height: 257px;
+
+  @include for-medium-up {
+    right: -350px;
+    top: -85%;
+    width: 616px;
+    height: 616px;
+  }
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 343px;
+  margin-top: 80px;
+  margin-bottom: 32px;
+  text-align: center;
+
+  @include for-medium-up {
+    font-size: 38px;
+    max-width: 680px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer-form {
+  width: 100%;
+  max-width: 540px;
+  margin-bottom: 80px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    @include for-medium-up {
+      background-color: #869bf2;
+      width: 560px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 90px;
+      padding-right: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    & input {
+      background-color: #869bf2;
+      border-radius: 90px;
+      border: none;
+      padding-left: 48px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+
+      @include for-medium-up {
+        max-width: 340px;
+        background-color: transparent;
+      }
+    }
+
+    & input::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      font-family: inherit;
+      color: #FFFFFF;
+    }
+
+    button {
+      height: 48px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      border-radius: 90px;
+      border: none;
+      margin-top: 20px;
+      background-color:  #FFFFFF;
+      color: #5270EC;
+      cursor:pointer;
+      background-image:  linear-gradient(93.5deg, #B3C1FF 0%, #FFFFFF 100%);
+      background-size: 200% auto;
+      transition: 0.5s;
+
+      @include  for-medium-up {
+        width: 190px;
+        margin-top: 0;
+      }
+
+      &:hover {
+        transition: 0.5s;
+        background-image: linear-gradient(93.5deg, #FFFFFF 10%,  #B3C1FF 90%);
+        background-position: right center;
+      }
+    }
+  }
+}

@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Mycommapp</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-wrapper">
+        <img src="./src/img/mycomapp_circle_top_left.svg" class="header-circle-left circlingUp"/>
+        <img src="./src/img/mycomapp_circle_top_right.svg" class="header-circle-right circlingDown"/>
+        <img src="./src/img/mycomapp_circle_mob_top_left.svg" class="header-littlecircle-left wow fadeInUp" data-wow-delay="0.7s"/>
+        <img src="./src/img/mycomapp_circle_mob_top_right.svg" class="header-littlecircle-right wow fadeInDown" data-wow-delay="0.8s"/>
+        <div class="header-logo">
+            <div class="header-logo__image">
+                <img src="src/img/shapelogo.png"/>
+                <div>
+                    <span>mycom</span>
+                    <span>app</span>
+                </div>
+            </div>
+            <div class="header-logo__switch">
+                <select class="select">
+                    <option data-lang="ru">Рус</option>
+                    <option data-lang="en">Eng</option>
+                    <option data-lang="de">De</option>
+                </select>
+            </div>
+        </div>
+        <h1 class="header__title wow fadeInUp lang" data-wow-delay="0.3s" data-lang="title">
+            Помогаем вашему бизнесу зарабатывать
+            в Интернете еще больше
+        </h1>
+        <p class="header__text wow fadeIn lang" data-wow-delay="0.8s" data-lang="subtitle">
+            Наша работа — воплощение идеи
+            в понятные программные решения важных задач электронной коммерции. Мы возьмем всю рутину на себя.
+        </p>
+        <form class="header-form wow fadeIn" data-wow-delay="1s">
+            <div class="header-form__wrapper">
+                <input type="number" placeholder="+38 (___) ___ - ____"/>
+                <button class="lang" data-lang="header-call-me">Позвоните мне</button>
+            </div>
+        </form>
+    </div>
+</header>
+<main>
+    <section class="business">
+        <div class="business-wrapper">
+            <div class="business-description">
+                <h2 class="business-description__title  wow fadeInUp lang" data-lang="for-business-business" data-wow-delay="0.6s">
+                    Mycomapp за то, чтобы бизнес занимался&nbsp<span>бизнесом!<div class="yellow wow fadeInLeftBig" data-wow-delay="1s"></div></span>
+                </h2>
+                <p class="business-description__text wow fadeInUp lang" data-lang="today" data-wow-delay="1s">
+                    Сегодня на мировом рынке специалистов в сфере IT-решений для бизнеса есть огромное количество предложений, но даже крупные и именитые компании имеют неприятный опыт сотрудничества, как выясняется позже, с малоопытными специалистами. Основные «боли» такого сотрудничества стали:
+                </p>
+            </div>
+            <ul class="business-pains wow fadeInUp lang" data-wow-delay="1.5s" data-lang="for-business-list">
+                <li class="business-pains__item">не соблюдение дедлайнов выполнения обозначенных работ;</li>
+                <li class="business-pains__item">выполнение работы менеджера и контроль специалистов;</li>
+                <li class="business-pains__item">постоянное отвлечение на ответы неопытному специалисту, который задает их «порционно», но на постоянной основе;</li>
+                <li class="business-pains__item">сомнительные знания исполнителя, нетактичное поведение и многое другое.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="service">
+        <div class="service-wrapper">
+            <div class="service-description">
+                <h2 class="service-description__title wow fadeInUp lang" data-wow-delay="0.2s" data-lang="our-services">Наши услуги</h2>
+                <p class="service-description__text wow fadeInUp lang" data-wow-delay="0.4s" data-lang="our-services-text">Мы работаем с проектами любой сложности, соблюдая все дедлайны и предоставляя лучший сервис.</p>
+            </div>
+            <ul class="service-list wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-title">
+                    <img src="./src/img/illustr.png">
+                    <h2 class="service-title__text lang" data-lang="our-services-title">Разработка и создание Web-приложений</h2>
+                </div>
+                <li class="service-list__paragraph open">
+                    <div class="service-list-description">
+                        <span class="service-list-description__text lang" data-lang="our-services-subtitle-1">SAAS-продукты</span>
+                        <div class="around"><img src="./src/img/violetArrow.png"/></div>
+                    </div>
+                    <p class="service-list__text lang" data-lang="our-services-subtext-1">
+                        Выгодное решение для бизнеса, которое функционирует по подписке на право пользования программным
+                        сервисом.
+                        Облачные сервисы одинаково хорошо работают с разными операционными системами и браузерами.
+                        Доступ к такому программному продукту осуществляется из любой точки мира, где есть доступом к
+                        интернету.
+                        Сервисы по подписке помогают выполнять большинство бизнес-процессов в 2-3 раза быстрее,
+                        а также выгодно отличаются стоимостью от индивидуально разработанного программного обеспечения.
+                        Кроме того, поставщиком SaaS-услуг предоставляется постоянная техподдержка,
+                        и вам не нужно заботиться о дальнейших доработках и своевременном обновлении системы. Примерами
+                        услуг такого типа,
+                        которые вы встречаете каждый день на сайтах интернет-магазинов, являются сервисы чатов с
+                        менеджерами или кнопки обратного звонка.
+                    </p>
+                </li>
+                <li class="service-list__paragraph open">
+                    <div class="service-list-description">
+                        <span class="service-list-description__text lang" data-lang="our-services-subtitle-2">Трекинговые платформы</span>
+                        <div class="around"><img src="./src/img/violetArrow.png"/></div>
+                    </div>
+                    <p class="service-list__text lang" data-lang="our-services-subtext-2">
+                        Выгодное решение для бизнеса, которое функционирует по подписке на право пользования программным
+                        сервисом.
+                        Облачные сервисы одинаково хорошо работают с разными операционными системами и браузерами.
+                        Доступ к такому программному продукту осуществляется из любой точки мира, где есть доступом к
+                        интернету.
+                        Сервисы по подписке помогают выполнять большинство бизнес-процессов в 2-3 раза быстрее,
+                        а также выгодно отличаются стоимостью от индивидуально разработанного программного обеспечения.
+                        Кроме того, поставщиком SaaS-услуг предоставляется постоянная техподдержка,
+                        и вам не нужно заботиться о дальнейших доработках и своевременном обновлении системы. Примерами
+                        услуг такого типа,
+                        которые вы встречаете каждый день на сайтах интернет-магазинов, являются сервисы чатов с
+                        менеджерами или кнопки обратного звонка.
+                    </p>
+                </li>
+                <li class="service-list__paragraph open">
+                    <div class="service-list-description">
+                        <span class="service-list-description__text lang" data-lang="our-services-subtitle-3">CRM-системы </span>
+                        <div class="around"><img src="./src/img/violetArrow.png"/></div>
+                    </div>
+                    <p class="service-list__text lang" data-lang="our-services-subtext-3">
+                        Выгодное решение для бизнеса, которое функционирует по подписке на право пользования программным
+                        сервисом.
+                        Облачные сервисы одинаково хорошо работают с разными операционными системами и браузерами.
+                        Доступ к такому программному продукту осуществляется из любой точки мира, где есть доступом к
+                        интернету.
+                        Сервисы по подписке помогают выполнять большинство бизнес-процессов в 2-3 раза быстрее,
+                        а также выгодно отличаются стоимостью от индивидуально разработанного программного обеспечения.
+                        Кроме того, поставщиком SaaS-услуг предоставляется постоянная техподдержка,
+                        и вам не нужно заботиться о дальнейших доработках и своевременном обновлении системы. Примерами
+                        услуг такого типа,
+                        которые вы встречаете каждый день на сайтах интернет-магазинов, являются сервисы чатов с
+                        менеджерами или кнопки обратного звонка.
+                    </p>
+                </li>
+                <li class="service-list__paragraph open">
+                    <div class="service-list-description">
+                        <span class="service-list-description__text lang" data-lang="our-services-subtitle-4">Мультиуровневые системы</span>
+                        <div class="around"><img src="./src/img/violetArrow.png"/></div>
+                    </div>
+                    <p class="service-list__text lang" data-lang="our-services-subtext-4">
+                        Выгодное решение для бизнеса, которое функционирует по подписке на право пользования программным
+                        сервисом.
+                        Облачные сервисы одинаково хорошо работают с разными операционными системами и браузерами.
+                        Доступ к такому программному продукту осуществляется из любой точки мира, где есть доступом к
+                        интернету.
+                        Сервисы по подписке помогают выполнять большинство бизнес-процессов в 2-3 раза быстрее,
+                        а также выгодно отличаются стоимостью от индивидуально разработанного программного обеспечения.
+                        Кроме того, поставщиком SaaS-услуг предоставляется постоянная техподдержка,
+                        и вам не нужно заботиться о дальнейших доработках и своевременном обновлении системы. Примерами
+                        услуг такого типа,
+                        которые вы встречаете каждый день на сайтах интернет-магазинов, являются сервисы чатов с
+                        менеджерами или кнопки обратного звонка.
+                    </p>
+                </li>
+                <li class="service-list__paragraph open">
+                    <div class="service-list-description">
+                        <span class="service-list-description__text lang" data-lang="our-services-subtitle-5">Data mining and analytics</span>
+                        <div class="around"><img src="./src/img/violetArrow.png"/></div>
+                    </div>
+                    <p class="service-list__text lang" data-lang="our-services-subtext-5">
+                        Выгодное решение для бизнеса, которое функционирует по подписке на право пользования программным
+                        сервисом.
+                        Облачные сервисы одинаково хорошо работают с разными операционными системами и браузерами.
+                        Доступ к такому программному продукту осуществляется из любой точки мира, где есть доступом к
+                        интернету.
+                        Сервисы по подписке помогают выполнять большинство бизнес-процессов в 2-3 раза быстрее,
+                        а также выгодно отличаются стоимостью от индивидуально разработанного программного обеспечения.
+                        Кроме того, поставщиком SaaS-услуг предоставляется постоянная техподдержка,
+                        и вам не нужно заботиться о дальнейших доработках и своевременном обновлении системы. Примерами
+                        услуг такого типа,
+                        которые вы встречаете каждый день на сайтах интернет-магазинов, являются сервисы чатов с
+                        менеджерами или кнопки обратного звонка.
+                    </p>
+                </li>
+                <li class="service-list__paragraph open">
+                    <div class="service-list-description">
+                        <span class="service-list-description__text lang" data-lang="our-services-subtitle-6">Мобильные приложения</span>
+                        <div class="around"><img src="./src/img/violetArrow.png"/></div>
+                    </div>
+                    <p class="service-list__text lang" data-lang="our-services-subtext-6">
+                        Выгодное решение для бизнеса, которое функционирует по подписке на право пользования программным
+                        сервисом.
+                        Облачные сервисы одинаково хорошо работают с разными операционными системами и браузерами.
+                        Доступ к такому программному продукту осуществляется из любой точки мира, где есть доступом к
+                        интернету.
+                        Сервисы по подписке помогают выполнять большинство бизнес-процессов в 2-3 раза быстрее,
+                        а также выгодно отличаются стоимостью от индивидуально разработанного программного обеспечения.
+                        Кроме того, поставщиком SaaS-услуг предоставляется постоянная техподдержка,
+                        и вам не нужно заботиться о дальнейших доработках и своевременном обновлении системы. Примерами
+                        услуг такого типа,
+                        которые вы встречаете каждый день на сайтах интернет-магазинов, являются сервисы чатов с
+                        менеджерами или кнопки обратного звонка.
+                    </p>
+                </li>
+                <li class="service-list__paragraph open">
+                    <div class="service-list-description">
+                        <span class="service-list-description__text lang" data-lang="our-services-subtitle-7">Чат-боты </span>
+                        <div class="around"><img src="./src/img/violetArrow.png"/></div>
+                    </div>
+                    <p class="service-list__text lang" data-lang="our-services-subtext-7">
+                        Выгодное решение для бизнеса, которое функционирует по подписке на право пользования программным
+                        сервисом.
+                        Облачные сервисы одинаково хорошо работают с разными операционными системами и браузерами.
+                        Доступ к такому программному продукту осуществляется из любой точки мира, где есть доступом к
+                        интернету.
+                        Сервисы по подписке помогают выполнять большинство бизнес-процессов в 2-3 раза быстрее,
+                        а также выгодно отличаются стоимостью от индивидуально разработанного программного обеспечения.
+                        Кроме того, поставщиком SaaS-услуг предоставляется постоянная техподдержка,
+                        и вам не нужно заботиться о дальнейших доработках и своевременном обновлении системы. Примерами
+                        услуг такого типа,
+                        которые вы встречаете каждый день на сайтах интернет-магазинов, являются сервисы чатов с
+                        менеджерами или кнопки обратного звонка.
+                    </p>
+                </li>
+                <li class="service-list__paragraph open">
+                    <div class="service-list-description">
+                        <span class="service-list-description__text lang" data-lang="our-services-subtitle-8">ERP-системы</span>
+                        <div class="around"><img src="./src/img/violetArrow.png"/></div>
+                    </div>
+                    <p class="service-list__text lang" data-lang="our-services-subtext-8">
+                        Выгодное решение для бизнеса, которое функционирует по подписке на право пользования программным
+                        сервисом.
+                        Облачные сервисы одинаково хорошо работают с разными операционными системами и браузерами.
+                        Доступ к такому программному продукту осуществляется из любой точки мира, где есть доступом к
+                        интернету.
+                        Сервисы по подписке помогают выполнять большинство бизнес-процессов в 2-3 раза быстрее,
+                        а также выгодно отличаются стоимостью от индивидуально разработанного программного обеспечения.
+                        Кроме того, поставщиком SaaS-услуг предоставляется постоянная техподдержка,
+                        и вам не нужно заботиться о дальнейших доработках и своевременном обновлении системы. Примерами
+                        услуг такого типа,
+                        которые вы встречаете каждый день на сайтах интернет-магазинов, являются сервисы чатов с
+                        менеджерами или кнопки обратного звонка.
+                    </p>
+                </li>
+            </ul>
+            <div class="service-types">
+                <div class="service-types__item wow fadeInUp"  data-wow-delay="0.4s">
+                    <div class="service-types__image">
+                        <img src="src/img/ux.png"/>
+                        <span class="lang" data-lang="our-services-desc-title-1">UI/UX</span>
+                    </div>
+                    <p class="service-types__item__text lang" data-lang="our-services-desc-1">
+                        Этот вид услуги заключается в проведении комплекса работ по проектированию и реализации
+                        максимально понятного
+                        и удобного пользовательского интерфейса сайта либо приложения. Ключевой фактор в данном случае
+                        - правильный анализ целевой аудитории, для которой создается уникальный дизайн и юзабилити.
+                    </p>
+                </div>
+                <div class="service-types__item wow fadeInUp"  data-wow-delay="0.5s">
+                    <div class="service-types__image">
+                        <img src="src/img/ba.png"/>
+                        <span class="lang" data-lang="our-services-desc-title-2">BI/BA</span>
+                    </div>
+                    <p class="service-types__item__text lang" data-lang="our-services-desc-2">
+                        Этот вид услуги заключается в проведении комплекса работ по проектированию и реализации
+                        максимально понятного
+                        и удобного пользовательского интерфейса сайта либо приложения. Ключевой фактор в данном случае
+                        - правильный анализ целевой аудитории, для которой создается уникальный дизайн и юзабилити.
+                    </p>
+                </div>
+                <div class="service-types__item wow fadeInUp"  data-wow-delay="0.6s">
+                    <div class="service-types__image">
+                        <img src="src/img/Unionqa.png"/>
+                        <span class="lang" data-lang="our-services-desc-title-3">QA/QC</span>
+                    </div>
+                    <p class="service-types__item__text lang" data-lang="our-services-desc-3">
+                        Этот вид услуги заключается в проведении комплекса работ по проектированию и реализации
+                        максимально понятного
+                        и удобного пользовательского интерфейса сайта либо приложения. Ключевой фактор в данном случае
+                        - правильный анализ целевой аудитории, для которой создается уникальный дизайн и юзабилити.
+                    </p>
+                </div>
+                <div class="service-types__item wow fadeInUp"  data-wow-delay="0.7s">
+                    <div class="service-types__image">
+                        <img src="src/img/Unionconsalting.png"/>
+                        <span class="lang" data-lang="our-services-desc-title-4">Консалтинг</span>
+                    </div>
+                    <p class="service-types__item__text lang" data-lang="our-services-desc-4">
+                        Этот вид услуги заключается в проведении комплекса работ по проектированию и реализации
+                        максимально понятного
+                        и удобного пользовательского интерфейса сайта либо приложения. Ключевой фактор в данном случае
+                        - правильный анализ целевой аудитории, для которой создается уникальный дизайн и юзабилити.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="workwithmycomapp">
+        <div class="workwithmycomapp-wrapper">
+            <div class="workwithmycomapp-title">
+                <h2 class="workwithmycomapp-title__work wow fadeInUp lang" data-wow-delay="0.2s" data-lang="work-title">
+                    Работать с нами&nbsp<span><div class="yellow wow fadeInLeftBig" data-wow-delay="1s"></div>легко и понятно</span>
+                </h2>
+                <p class="workwithmycomapp-title__text wow fadeInUp lang" data-lang="work-text" data-wow-delay="1s">
+                    Работу с Mycomapp условно можно разделить на несколько<br/>
+                    основных этапов:
+                </p>
+            </div>
+            <div class="workwithmycomapp-content">
+                <img src="./src/img/bigEllipse.png" class="workwithmycomapp-content__image wow fadeInUp" data-wow-delay="1.3s"/>
+                <div class="workwithmycomapp-stages wow fadeIn" data-wow-delay="1.3s">
+                    <div class="workwithmycomapp-stages-item">
+                        <p class="line"></p>
+                        <div class="workwithmycomapp-stages-item__before">
+                            <div class="workwithmycomapp-stages-item__before__around"></div>
+                        </div>
+                        <div class="workwithmycomapp-stages-item__after">
+                            <div class="workwithmycomapp-stages-item__after__count">01</div>
+                        </div>
+                        <p class="workwithmycomapp-stages-item__after__text wow fadeInUp" data-wow-delay="2s">
+                            <p class="line"></p>
+                            <span class="wow fadeInUp lang" data-wow-delay="0.4s" data-lang="work-list-item-1">
+                                Общение с клиентом и определение целей
+                                внедрения программного продукта
+                            </span>
+                        </p>
+                    </div>
+                    <div class="workwithmycomapp-stages-item">
+                        <div class="workwithmycomapp-stages-item__before">
+                            <div class="workwithmycomapp-stages-item__before__around"></div>
+                        </div>
+                        <div class="workwithmycomapp-stages-item__after">
+                            <div class="workwithmycomapp-stages-item__after__count">02</div>
+                        </div>
+                        <p class="workwithmycomapp-stages-item__after__text">
+                            <p class="line"></p>
+                            <span class="wow fadeInUp lang" data-wow-delay="0.5s" data-lang="work-list-item-2">Заполнение брифа</span>
+                        </p>
+                    </div>
+                    <div class="workwithmycomapp-stages-item">
+                        <div class="workwithmycomapp-stages-item__before">
+                            <div class="workwithmycomapp-stages-item__before__around"></div>
+                        </div>
+                        <div class="workwithmycomapp-stages-item__after">
+                            <div class="workwithmycomapp-stages-item__after__count">03</div>
+                        </div>
+                        <p class="workwithmycomapp-stages-item__after__text">
+                            <p class="line"></p>
+                            <span class="wow fadeInUp lang" data-wow-delay="0.6s" data-lang="work-list-item-3">Подписание официального договора</span>
+
+                        </p>
+                    </div>
+                    <div class="workwithmycomapp-stages-item">
+                        <div class="workwithmycomapp-stages-item__before">
+                            <div class="workwithmycomapp-stages-item__before__around"></div>
+                        </div>
+                        <div class="workwithmycomapp-stages-item__after">
+                            <div class="workwithmycomapp-stages-item__after__count">04</div>
+                        </div>
+                        <p class="workwithmycomapp-stages-item__after__text">
+                            <p class="line"></p>
+                            <span class="wow fadeInUp lang" data-wow-delay="0.7s" data-lang="work-list-item-4">Анализ бизнеса клиента и его конкурентов</span>
+
+                        </p>
+                    </div>
+                    <div class="workwithmycomapp-stages-item">
+                        <div class="workwithmycomapp-stages-item__before">
+                            <div class="workwithmycomapp-stages-item__before__around"></div>
+                        </div>
+                        <div class="workwithmycomapp-stages-item__after">
+                            <div class="workwithmycomapp-stages-item__after__count">05</div>
+                        </div>
+                        <p class="workwithmycomapp-stages-item__after__text">
+                            <p class="line"></p>
+                            <span class="wow fadeInUp lang" data-wow-delay="0.8s" data-lang="work-list-item-5">Разработка проекта</span>
+                        </p>
+                    </div>
+                    <div class="workwithmycomapp-stages-item">
+                        <div class="workwithmycomapp-stages-item__before">
+                            <div class="workwithmycomapp-stages-item__before__around"></div>
+                        </div>
+                        <div class="workwithmycomapp-stages-item__after">
+                            <div class="workwithmycomapp-stages-item__after__count">06</div>
+                        </div>
+                        <p class="workwithmycomapp-stages-item__after__text">
+                            <p class="line lost"></p>
+                            <span class="wow fadeInUp lang" data-wow-delay="0.9s" data-lang="work-list-item-6">Реализация и внедрение продукта</span>
+
+                        </p>
+                    </div>
+                    <div class="workwithmycomapp-stages-item">
+                        <div class="workwithmycomapp-stages-item__before">
+                            <div class="workwithmycomapp-stages-item__before__around"></div>
+                        </div>
+                        <div class="workwithmycomapp-stages-item__after">
+                            <div class="workwithmycomapp-stages-item__after__count">07</div>
+                        </div>
+                        <p class="workwithmycomapp-stages-item__after__text">
+                            <span class="wow fadeInUp lang" data-wow-delay="1s" data-lang="work-list-item-7">Контроль и запуск готового бизнес-решения</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="workwithmycomapp-incount wow fadeInUp lang" data-lang="about-title" data-wow-delay="0.3s">В цифрах о Mycomapp</h2>
+            <div class="workwithmycomapp-count">
+                <div class="workwithmycomapp-count__item wow fadeInUp" data-wow-delay="0.4s">
+                    <span class="count" data-value="7">0</span>
+                    <span class="about lang" data-lang="about-item-text-1">лет опыта</span>
+                </div>
+                <div class="workwithmycomapp-count__item wow fadeInUp" data-wow-delay="0.4s">
+                    <span class="count plus" data-value="300">0</span>
+                    <span class="about lang" data-lang="about-item-text-2">
+                        успешно реализованных
+                        проектов
+                    </span>
+                </div>
+                <div class="workwithmycomapp-count__item wow fadeInUp" data-wow-delay="0.4s">
+                    <span class="count" data-value="124">0</span>
+                    <span class="about lang" data-lang="about-item-text-3">довольных клиента</span>
+                </div>
+                <div class="workwithmycomapp-count__item wow fadeInUp" data-wow-delay="0.4s">
+                    <span class="count" data-value="65">0</span>
+                    <span class="about lang" data-lang="about-item-text-4">специолистов</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="success">
+        <div class="success-wrapper">
+            <div class="success-title">
+                <h2 class="success-title__history wow fadeInUp lang" data-wow-delay="0.2s" data-lang="success-title">
+                    Истории&nbsp<span>успеха&nbsp<div class="yellow wow fadeInLeftBig" data-wow-delay="1s"></div></span> клиентов Mycomapp
+                </h2>
+                <p class="success-title__result wow fadeInUp lang"  data-wow-delay="0.7s" data-lang="success-text">Отличные результаты для клиентов — лучшая награда наших трудов.</p>
+            </div>
+            <div class="success-slider">
+                <div class="success-slider-rev wow fadeInUp lang" data-wow-delay="0.9s" data-lang="success-slier-1">
+                    <p class="success-slider-rev__text">
+                        «Сотрудничество со специалистами Mycomapp оставило только приятные впечатления.
+                        На каждый заданный нами вопрос мы получали своевременный
+                        и развернутый ответ. Все пожелания были учтены
+                        и реализованы наилучшим образом. Отличная команда профессионалов,
+                        которые действительно знают, чем занимаются. Рекомендуем к сотрудничеству.»
+                    </p>
+                    <div class="success-slider-rev__author">
+                        <span class="success-slider-rev__name">Эмили Ласстент</span>
+                        <span class="success-slider-rev__position">CEO of White Umbrella Co.</span>
+                    </div>
+                </div>
+                <div class="success-slider-rev wow fadeInUp lang" data-wow-delay="1.1s" data-lang="success-slier-2">
+                    <p class="success-slider-rev__text">
+                        «3 года назад наша компания искала команду профессиональных разработчиков и
+                        специалистов по внедрению в бизнес цифровых решений.
+                        На первом этапе нужно было создать удобное мобильное приложение для наших клиентов. Мы выбрали
+                        Mycomapp.
+                        Ребята сделали свою работу качественно,
+                        с соблюдением всех сроков и главное — пониманием запросов клиента и конечных пользователей
+                        продукта.»
+                    </p>
+                    <div class="success-slider-rev__author">
+                        <span class="success-slider-rev__name">Адам Руабизи</span>
+                        <span class="success-slider-rev__position">Маркетолог, интернет-магазин Best price It</span>
+                    </div>
+                </div>
+                <div class="success-slider-rev wow fadeInUp lang" data-wow-delay="0.9s" data-lang="success-slier-3">
+                    <p class="success-slider-rev__text">
+                        «Сотрудничество со специалистами Mycomapp оставило только приятные впечатления.
+                        На каждый заданный нами вопрос мы получали своевременный
+                        и развернутый ответ. Все пожелания были учтены
+                        и реализованы наилучшим образом. Отличная команда профессионалов,
+                        которые действительно знают, чем занимаются. Рекомендуем к сотрудничеству.»
+                    </p>
+                    <div class="success-slider-rev__author">
+                        <span class="success-slider-rev__name">Эмили Ласстент</span>
+                        <span class="success-slider-rev__position">CEO of White Umbrella Co.</span>
+                    </div>
+                </div>
+                <div class="success-slider-rev wow fadeInUp lang" data-wow-delay="1.1s" data-lang="success-slier-4">
+                    <p class="success-slider-rev__text">
+                        «3 года назад наша компания искала команду профессиональных разработчиков и
+                        специалистов по внедрению в бизнес цифровых решений.
+                        На первом этапе нужно было создать удобное мобильное приложение для наших клиентов. Мы выбрали
+                        Mycomapp.
+                        Ребята сделали свою работу качественно,
+                        с соблюдением всех сроков и главное — пониманием запросов клиента и конечных пользователей
+                        продукта.»
+                    </p>
+                    <div class="success-slider-rev__author">
+                        <span class="success-slider-rev__name">Адам Руабизи</span>
+                        <span class="success-slider-rev__position">Маркетолог, интернет-магазин Best price It</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ouradvantages">
+        <h2 class="ouradvantages-title wow fadeInUp lang" data-wow-delay="0.4s" data-lang="advantages-title">Наши преимущества</h2>
+        <div class="ouradvantages-list">
+            <div class="ouradvantages-list__item wow fadeInUp"  data-wow-delay="0.5s">
+                <img src="./src/img/seven.png"/>
+                <span class="ouradvantages-list__item__text lang" data-lang="advantages-item-1">
+                    7 лет успешного опыта в проектировании и создании цифровых решений и инструментов для бизнеса
+                </span>
+            </div>
+            <div class="ouradvantages-list__item wow fadeInUp" data-wow-delay="0.6s">
+                <img src="./src/img/monitor.png"/>
+                <span class="ouradvantages__items__item__text lang" data-lang="advantages-item-2">
+                    Свыше 300 разработанных
+                    и созданных успешных digital-проектов
+                </span>
+            </div>
+            <div class="ouradvantages-list__item wow fadeInUp" data-wow-delay="1s">
+                <img src="./src/img/puzzle.png"/>
+                <span class="ouradvantages-list__item__text lang" data-lang="advantages-item-3">
+                    Четкое решение задач, поставленных перед проектом
+                </span>
+            </div>
+            <div class="ouradvantages-list__item wow fadeInUp" data-wow-delay="1.2s">
+                <img src="./src/img/task.png"/>
+                <span class="ouradvantages__items__item__text lang" data-lang="advantages-item-4">
+                    Обучения персонала работе
+                    с программным продуктом
+                </span>
+            </div>
+            <div class="ouradvantages-list__item wow fadeInUp" data-wow-delay="1.5s">
+                <img src="./src/img/service.png"/>
+                <span class="ouradvantages__items__item__text lang" data-lang="advantages-item-5">
+                    Послепродажное обслуживание
+                    в течение 2 месяцев
+                </span>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer wow fadeInUp" data-wow-delay="0.6s">
+    <img src="./src/img/mycomapp_circle_footer_left.svg" class="footer-circle-left wow fadeInUp" data-wow-delay="1.4s"/>
+    <img src="./src/img/mycomapp_circle_footer_right.svg" class="footer-circle-right wow fadeInDown" data-wow-delay="1.6s"/>
+    <h2 class="footer-title wow fadeIn lang" data-wow-delay="0.8s" data-lang="footer-title">
+        Мы с радостью проведем экспресс-оценку вашего проекта
+    </h2>
+    <form class="footer-form wow fadeInUp" data-wow-delay="1s">
+       <div class="footer-form__wrapper">
+           <input type="number" placeholder="+38 (___) ___ - ____"/>
+           <button class="lang" data-lang="footer-call">Позвоните мне</button>
+       </div>
+    </form>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

@@ -1,0 +1,28 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$e-lg: 1200px;
+
+@mixin for-small-up {
+  @media screen and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin for-medium-up {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin for-large-up {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin for-e-large-up {
+  @media screen and (min-width: $e-lg) {
+    @content;
+  }
+}

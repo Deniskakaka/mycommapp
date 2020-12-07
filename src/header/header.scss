@@ -1,0 +1,304 @@
+@import "../breakpoint/breakpoint.scss";
+
+.header {
+  background-color: #F4F6FE;
+  padding: 16px 16px 0 16px;
+  position: relative;
+  overflow: hidden;
+
+  @include for-small-up {
+    padding: 34px 32px 154px 32px;
+  }
+
+    &__title {
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 120%;
+      color: #333F63;
+      max-width: 730px;
+      margin-bottom: 16px;
+
+      @include for-medium-up {
+        font-size: 48px;
+      }
+    }
+
+    &__text {
+      text-align: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #505973;
+      max-width: 730px;
+      margin-bottom: 36px;
+    }
+  }
+
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1441px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.header-circle-left {
+  position: absolute;
+  left: -400px;
+  bottom: -45%;
+  display: none;
+
+  @include for-medium-up {
+    display: block;
+  }
+}
+
+.header-circle-right {
+  position: absolute;
+  right: -280px;
+  top: -30%;
+  display: none;
+
+  @include for-medium-up {
+    display: block;
+  }
+}
+
+.header-littlecircle-left {
+  position: absolute;
+  bottom: -40%;
+  left: -330px;
+  z-index: 1;
+
+  @include for-medium-up {
+    display: none;
+  }
+}
+
+.header-littlecircle-right {
+  position: absolute;
+  top: -10%;
+  right: -220px;
+
+  @include for-medium-up {
+    display: none;
+  }
+}
+
+.header-form {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  margin-bottom: 80px;
+  z-index: 10;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    @include for-medium-up {
+      background-color: #FFFFFF;
+      width: 560px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 90px;
+      padding-right: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    & input {
+      display: flex;
+      align-items: center;
+      background-color: #FFFFFF;
+      border-radius: 90px;
+      border: none;
+      padding-left: 48px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+
+      @include for-medium-up {
+        max-width: 340px;
+        background-color: transparent;
+      }
+    }
+
+    & input::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      font-family: inherit;
+      color: #C5CBDB;
+      margin: auto;
+    }
+
+    button {
+      height: 48px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      border-radius: 90px;
+      border: none;
+      margin-top: 20px;
+      background-color:  #5270EC;
+      transition: 0.5s;
+      color: #FFFFFF;
+      cursor:pointer;
+      background-image: linear-gradient(to right, #5270EC 0%, #03befc 50%, #895cf2 100%);
+      background-size: 200% auto;
+
+      @include  for-medium-up {
+        width: 190px;
+        margin-top: 0;
+      }
+
+      &:hover {
+        transition: 0.5s;
+        background-image: linear-gradient(to right, #895cf2 0%, #03befc 50%, #5270EC 100%);
+        background-position: right center;
+      }
+    }
+  }
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+  width: 90%;
+  margin-bottom: 92px;
+
+  &__switch {
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 32px;
+
+    &:after {
+      content: "";
+      background-image: url("./img/Vectorarrow.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      top: 14px;
+      right: 10px;
+      width: 12px;
+      height: 6px;
+    }
+  }
+
+  .selectric {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 70px;
+    height: 32px;
+    border: 1px solid #C5CBDB;
+    border-radius: 90px;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+
+    &:after {
+      position: absolute;
+      right: 20px;
+      content: "";
+      width: 12px;
+      height: 6px;
+      background-image: url("./img/Vectorarrowselector.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    span {
+      text-overflow: inherit;
+      margin: 0;
+    }
+
+    b {
+      display: none;
+    }
+  }
+
+  .click {
+    border-top-left-radius: 16px!important;
+    border-top-right-radius: 16px!important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+    background-color: #FFFFFF!important;
+  }
+
+  .selectric-items {
+    border-top: none;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+    ul {
+      border-top: none;
+      border-bottom-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+
+      li:last-child {
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+
+      li {
+        border-color: transparent!important;
+        background-color: #FFFFFF;
+        border-top: none;
+
+        &:hover {
+          background-color: #F4F6FE!important;
+
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 30px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      margin-left: 7px;
+      height: 35px;
+
+      & > span:first-child {
+        font-weight: 400;
+      }
+
+      & > span:last-child {
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.circlingUp {
+  transform: rotate(85deg);
+  transition: 1.4s ease;
+}
+
+.circlingDown {
+  transition: 1.4s ease;
+  transform: rotate(80deg);
+}

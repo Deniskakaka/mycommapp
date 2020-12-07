@@ -1,0 +1,114 @@
+
+.business {
+
+  @include for-medium-up {
+    padding-left: 30px;
+    flex-direction: row;
+  }
+
+}
+
+
+.business-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1441px;
+  margin: auto;
+
+  @include for-medium-up {
+    flex-direction: row;
+    padding-left: 165px;
+  }
+}
+
+
+.business-description {
+  max-width: 540px;
+  margin-top: 80px;
+
+  @include for-medium-up {
+    margin-right: 60px;
+  }
+
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    margin: 0 16px 0 16px;
+
+    @include for-medium-up {
+      font-size: 38px;
+      padding-right: 0;
+    }
+
+    & span {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #333F63;
+    margin: 16px 16px 0 16px;
+    max-width: 540px;
+
+    @include for-e-large-up  {
+      min-width: 540px;
+    }
+  }
+}
+
+.business-pains {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #FBFCFF;
+  margin-left: 5px;
+  margin-top: 40px;
+  align-self: flex-end;
+  padding: 16px 16px 16px 33px;
+
+  @include for-large-up {
+    align-items: flex-start;
+    padding: 32px 103px 32px 39px;
+    margin-top: 135px;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    color: #505973;
+    max-width: 420px;
+    margin-bottom: 16px;
+
+    @include for-medium-up {
+      max-width: 508px;
+      text-align: start;
+      margin-left: 20px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-image: url("./img/arrowForList.png");
+      left: -30px;
+      top: 2px;
+      background-position: center;
+
+      @include for-medium-up {
+        left: -28px;
+      }
+    }
+  }
+}

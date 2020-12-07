@@ -1,0 +1,279 @@
+.workwithmycomapp {
+  padding: 0 16px;
+}
+
+.workwithmycomapp-count {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1441px;
+
+  &__item:nth-child(1) {
+    .count {
+      color: #7D95FA;
+    }
+  }
+
+  &__item:nth-child(2) {
+    .count {
+      color: #93F5F1;
+    }
+  }
+
+  &__item:nth-child(3) {
+    .count {
+      color: #F5C849;
+    }
+  }
+  &__item:nth-child(4) {
+    .count {
+      color: #5270EC;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #F4F6FE;
+    border-radius: 8px;
+    min-width: 147px;
+    max-width: 147px;
+    min-height: 147px;
+    margin-top: 16px;
+    padding: 8px 8px 8px 12px;
+    position: relative;
+
+    @include for-medium-up {
+      max-width: 255px;
+      max-height: 202px;
+      margin-left: 30px;
+      margin-top: 80px;
+      justify-content: flex-start;
+      padding: 32px;
+    }
+
+    .count {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 120%;
+    }
+    .about {
+      font-size: 16px;
+      line-height: 150%;
+      color: #505973;
+    }
+
+    span {
+      max-width: 131px;
+    }
+  }
+
+}
+
+.workwithmycomapp-incount{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  color: #333F63;
+  text-align: center;
+  margin: 120px auto 24px auto;
+}
+
+.workwithmycomapp-stages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  @include for-medium-up {
+    margin-top: 30px;
+    margin-left: 103px;
+  }
+}
+.workwithmycomapp-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+
+  @include for-medium-up {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__image {
+    width: 310px;
+    height: 310px;
+
+    @include for-medium-up {
+      min-width: 400px;
+      min-height: 400px;
+      align-self: center;
+    }
+  }
+}
+
+.workwithmycomapp-title {
+  align-self: flex-start;
+  margin-bottom: 40px;
+  margin-top: 120px;
+
+  @include for-medium-up {
+    align-self: flex-start;
+    margin-top: 160px;
+  }
+
+  &__work {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #333F63;
+    margin-bottom: 16px;
+    max-width: 540px;
+
+    @include for-medium-up {
+      font-size: 38px;
+      margin-bottom: 24px;
+    }
+
+    span {
+      position: relative;
+      overflow: hidden;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 150%;
+      color: #333F63;
+      max-width: 540px;
+    }
+  }
+}
+
+.workwithmycomapp-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 1441px;
+
+  @include for-e-large-up {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+  background-color: #C5CBDB;
+  height: 2px;
+  position: absolute;
+  min-width: 150px;
+  left: -42px;
+  bottom: -42px;
+  z-index: -1;
+
+  &.light {
+    background-color: #5270EC;
+  }
+}
+
+.lost {
+  bottom: -35px;
+}
+
+.workwithmycomapp-stages-item {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  position: relative;
+  max-width: 540px;
+  margin-bottom: 80px;
+
+  &__before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    min-height: 32px;
+    background: #F4F7FB;
+    border: none;
+    border-radius: 50%;
+
+    &__around {
+      min-width: 12px;
+      min-height: 12px;
+      background: #C5CBDB;
+      border: none;
+      border-radius: 50%;
+      position: relative;
+    }
+  }
+
+  &__after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #7D95FA;
+    border-radius: 50%;
+    left: 11px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5270EC;
+    opacity: 0;
+
+    &.show {
+      opacity: 1;
+      transition: 0.8s ease;
+    }
+
+    &__count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background: #F4F7FB;
+      border-radius: 50%;
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #333F63;
+      margin-left: 12px;
+      position: relative;
+    }
+  }
+}
+
+.ellips {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+
+  @include for-medium-up {
+    width: 382px;
+    height: 382px;
+  }
+}
+
+.plus:after {
+  content: "+";
+}
